@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.user-details-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #444;
+}
+
+.user-details-container h2 {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.user-details-container p {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+#logout-btn {
+  margin-top: 5px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logout-btn:hover {
+  background-color: #e60000;
+}
+
+.file-upload-container {
+  margin-bottom: 50px;
+}
+
+.file-upload-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#file-input {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.file-upload-container input::-webkit-file-upload-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.file-upload-container input::-webkit-file-upload-button:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+#file-input:focus,
+#file-input:hover {
+  outline: none;
+  border-color: #007bff;
+}
+
+.email-form-container {
+  margin-bottom: 50px;
+}
+
+.email-form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.email-input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#email-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #333;
+  color: #fff;
+}
+
+#email-input:focus,
+#email-input:hover {
+  outline: none;
+  border-color: #007bff;
+}
+
+#email-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.email-tag {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 3px 8px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.email-tag span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.remove-icon {
+  font-size: 24px !important;
+  cursor: pointer !important;
+}
+
+.remove-icon:hover {
+  color: #dc3545;
+}
+
+#submit-btn {
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#submit-btn:hover {
+  background-color: #0069d9;
+}
+
+#submit-btn:active {
+  background-color: #005cbf;
+}

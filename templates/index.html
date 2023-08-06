@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Input Demo</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="user-details-container">
+        <h2>User Details</h2>
+        <p id="username">Username:</p>
+        <p id="email">Email:</p>
+        <center>
+          <button id="logout-btn" onclick="logout()">Logout</button>
+        </center>
+      </div>
+      <div class="file-upload-container">
+        <h2>Upload File</h2>
+        <input type="file" id="file-input" />
+      </div>
+      <div class="email-form-container">
+        <h2>Add Emails</h2>
+        <div class="email-input-container">
+          <input
+            type="email"
+            id="email-input"
+            placeholder="Enter email address"
+          />
+        </div>
+        <div id="email-tags"></div>
+        <center>
+          <button id="submit-btn" onclick="submitData()">Submit</button>
+        </center>
+      </div>
+    </div>
+    <script src="{{ url_for('static', path='/js/app.js') }}"></script>
+  </body>
+</html>
